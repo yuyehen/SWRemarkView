@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF4B9D451D2A08D500761210 /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4B9D441D2A08D500761210 /* SWViewController.m */; };
 		FFA92FA21D0E63DE00504ACE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA92FA11D0E63DE00504ACE /* main.m */; };
 		FFA92FA51D0E63DE00504ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA92FA41D0E63DE00504ACE /* AppDelegate.m */; };
-		FFA92FA81D0E63DE00504ACE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA92FA71D0E63DE00504ACE /* ViewController.m */; };
 		FFA92FAB1D0E63DE00504ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA92FA91D0E63DE00504ACE /* Main.storyboard */; };
 		FFA92FAD1D0E63DE00504ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA92FAC1D0E63DE00504ACE /* Assets.xcassets */; };
 		FFA92FB01D0E63DE00504ACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA92FAE1D0E63DE00504ACE /* LaunchScreen.storyboard */; };
 		FFA92FBB1D0E63DE00504ACE /* swtextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA92FBA1D0E63DE00504ACE /* swtextViewTests.m */; };
 		FFA92FC61D0E63DE00504ACE /* swtextViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA92FC51D0E63DE00504ACE /* swtextViewUITests.m */; };
+		FFA92FD51D0E63E600504ACE /* SWRemarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA92FD41D0E63E600504ACE /* SWRemarkView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF4B9D431D2A08D500761210 /* SWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWViewController.h; sourceTree = "<group>"; };
+		FF4B9D441D2A08D500761210 /* SWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWViewController.m; sourceTree = "<group>"; };
 		FFA92F9D1D0E63DE00504ACE /* swtextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swtextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA92FA11D0E63DE00504ACE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFA92FA31D0E63DE00504ACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFA92FA41D0E63DE00504ACE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FFA92FA61D0E63DE00504ACE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FFA92FA71D0E63DE00504ACE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FFA92FAA1D0E63DE00504ACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFA92FAC1D0E63DE00504ACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA92FAF1D0E63DE00504ACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,8 @@
 		FFA92FC11D0E63DE00504ACE /* swtextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swtextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA92FC51D0E63DE00504ACE /* swtextViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = swtextViewUITests.m; sourceTree = "<group>"; };
 		FFA92FC71D0E63DE00504ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA92FD31D0E63E600504ACE /* SWRemarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRemarkView.h; sourceTree = "<group>"; };
+		FFA92FD41D0E63E600504ACE /* SWRemarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRemarkView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +104,12 @@
 		FFA92F9F1D0E63DE00504ACE /* swtextView */ = {
 			isa = PBXGroup;
 			children = (
+				FFA92FD31D0E63E600504ACE /* SWRemarkView.h */,
+				FFA92FD41D0E63E600504ACE /* SWRemarkView.m */,
 				FFA92FA31D0E63DE00504ACE /* AppDelegate.h */,
 				FFA92FA41D0E63DE00504ACE /* AppDelegate.m */,
-				FFA92FA61D0E63DE00504ACE /* ViewController.h */,
-				FFA92FA71D0E63DE00504ACE /* ViewController.m */,
+				FF4B9D431D2A08D500761210 /* SWViewController.h */,
+				FF4B9D441D2A08D500761210 /* SWViewController.m */,
 				FFA92FA91D0E63DE00504ACE /* Main.storyboard */,
 				FFA92FAC1D0E63DE00504ACE /* Assets.xcassets */,
 				FFA92FAE1D0E63DE00504ACE /* LaunchScreen.storyboard */,
@@ -270,9 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA92FA81D0E63DE00504ACE /* ViewController.m in Sources */,
+				FFA92FD51D0E63E600504ACE /* SWRemarkView.m in Sources */,
 				FFA92FA51D0E63DE00504ACE /* AppDelegate.m in Sources */,
 				FFA92FA21D0E63DE00504ACE /* main.m in Sources */,
+				FF4B9D451D2A08D500761210 /* SWViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +502,7 @@
 				FFA92FCC1D0E63DE00504ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFA92FCD1D0E63DE00504ACE /* Build configuration list for PBXNativeTarget "swtextViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +511,7 @@
 				FFA92FCF1D0E63DE00504ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFA92FD01D0E63DE00504ACE /* Build configuration list for PBXNativeTarget "swtextViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +520,7 @@
 				FFA92FD21D0E63DE00504ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
