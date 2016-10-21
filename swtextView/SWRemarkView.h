@@ -23,6 +23,10 @@
  *
  */
 @property (nonatomic) NSString* headmark;
+/**
+ *  textView初始值
+ */
+@property (nonatomic, strong) NSString *title;
 
 @property (assign,nonatomic) CGFloat fontSize;
 

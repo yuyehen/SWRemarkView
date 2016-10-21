@@ -9,8 +9,8 @@
 #import "SWViewController.h"
 #import "SWRemarkView.h"
 @interface SWViewController ()
-@property (weak, nonatomic) IBOutlet SWTextView *textView;
-
+@property (weak, nonatomic) IBOutlet SWRemarkView *textView;
+@property (nonatomic, strong) SWRemarkView *textView2;
 @end
 
 @implementation SWViewController
@@ -21,6 +21,11 @@
     _textView.placeholder = @"123123";
     _textView.sizeNumber = 10;
     
+    _textView2 = [[SWRemarkView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    _textView2.headmark = @"备注：";
+    _textView2.placeholder = @"123123";
+    _textView2.sizeNumber = 10;
+    [self.view addSubview:_textView2];
 }
 
 - (void)didReceiveMemoryWarning {

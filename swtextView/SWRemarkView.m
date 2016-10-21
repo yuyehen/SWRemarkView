@@ -60,6 +60,13 @@
     self.textView.textContainerInset = textEdgeInset;
 }
 
+- (void)setTitle:(NSString *)title {
+    self.textView.text = title;
+    if (title.length) {
+        self.placeholderLabel.hidden = YES;
+    }
+}
+
 -(NSString *)text
 {
     if ([[self.textView.text substringFromIndex:_headmark.length]isEqualToString:_placeholder]) {
@@ -70,7 +77,7 @@
 
 -(instancetype)init
 {
-    self = [self initWithFrame:CGRectZero];
+    self = [super init];
     if (self) {
         [self loadView];
     }
@@ -152,11 +159,11 @@
         if (text.length) {
             self.sizeLab.text = [NSString stringWithFormat:@"%lu/%ld",textView.text.length - _headmark.length + text.length,(long)_sizeNumber];
         }else {
-            self.sizeLab.text = [NSString stringWithFormat:@"%lu/%ld",textView.text.length - _headmark.length - 1,(long)_sizeNumber];
+            self.sizeLab.text = [NSString stringWithFormat:@"%lu/%ld",textView.text.length - _headmark.length - range.length,(long)_sizeNumber];
         }
         
         return YES;
-
+        
     }else{
         return NO;
     }
@@ -169,7 +176,7 @@
         if (textView.selectedRange.location<_headmark.length) {
             NSRange range;
             range.location = _headmark.length;
-            range.length  = 0;
+            range.length  = textView.text.length - _headmark.length;
             textView.selectedRange = range;
         }
     });
