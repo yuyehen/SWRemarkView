@@ -24,6 +24,7 @@
     _textView2 = [[SWRemarkView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     _textView2.headmark = @"备注：";
     _textView2.placeholder = @"123123";
+    _textView2.attributedText = [[NSAttributedString alloc] initWithString:@"备注：撒打算打算的" attributes:@{NSForegroundColorAttributeName:[UIColor redColor]}];
     _textView2.sizeNumber = 10;
     [self.view addSubview:_textView2];
 }

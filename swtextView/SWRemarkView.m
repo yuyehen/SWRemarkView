@@ -8,6 +8,7 @@
 
 #import "SWRemarkView.h"
 #define FontSize 15
+#define HeadColor [UIColor blackColor]
 @interface SWRemarkView ()<UITextViewDelegate>
 {
     CGFloat placeholderX;
@@ -63,6 +64,24 @@
 - (void)setTitle:(NSString *)title {
     self.textView.text = title;
     if (title.length) {
+        self.placeholderLabel.hidden = YES;
+    }
+}
+
+- (void)setEditable:(BOOL)editable {
+    self.textView.editable = editable;
+}
+
+- (void)setAttributedText:(NSAttributedString *)attributedText {
+    //    if (self.headmark.length) {
+    //        NSAttributedString *headAttributedString = [[NSAttributedString alloc] initWithString:self.headmark attributes:@{NSForegroundColorAttributeName:HeadColor}];
+    //        NSMutableAttributedString *mutablerAttributedText = [[NSMutableAttributedString alloc] initWithAttributedString:attributedText];
+    //        [mutablerAttributedText insertAttributedString:headAttributedString atIndex:0];
+    //        self.textView.attributedText = mutablerAttributedText;
+    //    }else {
+    self.textView.attributedText = attributedText;
+    //    }
+    if (attributedText.string.length) {
         self.placeholderLabel.hidden = YES;
     }
 }
